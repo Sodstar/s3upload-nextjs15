@@ -25,13 +25,13 @@ export default function HomePage() {
   };
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-8">S3 File Uploader Demo</h1>
+      <h1 className="text-3xl font-bold mb-8">S3 File хуулах жишээ</h1>
       
 
       {/* Profile Image Uploader */}
       <div className="mb-12">
         <div className="flex flex-col items-center">
-        <h2 className="text-xl font-semibold mb-4">Profile Image Upload</h2>
+        <h2 className="text-xl font-semibold mb-4">Profile зураг хуулах</h2>
         <img src={profileImage} alt="Profile" className="mb-4 w-32 h-32 object-cover rounded-full" />
         <p className="text-sm text-gray-500 mb-4">Upload a profile image (max 5MB)</p>
 
@@ -48,7 +48,7 @@ export default function HomePage() {
 
       {/* Single Image Uploader */}
       <div className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">Single Image Upload</h2>
+        <h2 className="text-xl font-semibold mb-4">1 зураг хуулах</h2>
         <S3Uploader
           multiple={false}
           accept="image/*"
@@ -60,7 +60,7 @@ export default function HomePage() {
 
       {/* Multiple Images Uploader */}
       <div className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">Multiple Images Upload</h2>
+        <h2 className="text-xl font-semibold mb-4">Олон зураг хуулах</h2>
         <S3Uploader
           multiple={true}
           accept="image/*"
@@ -72,7 +72,7 @@ export default function HomePage() {
 
       {/* Any File Type Uploader */}
       <div className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">Any File Type Upload</h2>
+        <h2 className="text-xl font-semibold mb-4">Ямар ч төрлийн файл хуулах</h2>
         <S3Uploader
           multiple={true}
           accept="*/*"
