@@ -1,8 +1,7 @@
-// app/page.tsx - Example usage
 'use client';
 
 import S3Uploader from "@/components/s3uploader";
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 export default function HomePage() {
   const [uploadFiles, setUploadFiles] = useState<any[]>([]);

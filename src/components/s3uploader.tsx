@@ -100,6 +100,7 @@ const S3Uploader: React.FC<S3UploaderProps> = ({
       }
     }
 
+   
     // Check for duplicate files
     const existingNames = files.map(f => f.name);
     const duplicates = newFiles.filter(f => existingNames.includes(f.name));
