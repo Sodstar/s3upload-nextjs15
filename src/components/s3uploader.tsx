@@ -346,9 +346,9 @@ const S3Uploader: React.FC<S3UploaderProps> = ({
                 <div key={`${file.name}-${index}`} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                   <div className="flex items-center space-x-3 min-w-0 flex-1">
                     {isImage(file.type) ? (
-                      <Image className="h-8 w-8 text-blue-500 flex-shrink-0" />
+                      <Image className="h-8 w-8 text-blue-500 shrink-0" />
                     ) : (
-                      <File className="h-8 w-8 text-gray-500 flex-shrink-0" />
+                      <File className="h-8 w-8 text-gray-500 shrink-0" />
                     )}
                     <div className="min-w-0 flex-1">
                       <p className="text-sm font-medium truncate" title={file.name}>
@@ -363,7 +363,7 @@ const S3Uploader: React.FC<S3UploaderProps> = ({
                     onClick={() => removeFile(index)}
                     variant="ghost"
                     size="sm"
-                    className="text-red-500 hover:text-red-700 flex-shrink-0"
+                    className="text-red-500 hover:text-red-700 shrink-0"
                     disabled={uploading}
                     aria-label={`Remove ${file.name}`}
                   >
@@ -438,9 +438,9 @@ const S3Uploader: React.FC<S3UploaderProps> = ({
                 <div key={`${file.key}-${index}`} className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
                   <div className="flex items-center space-x-3 min-w-0 flex-1">
                     {isImage(file.type) ? (
-                      <Image className="h-8 w-8 text-green-500 flex-shrink-0" />
+                      <Image className="h-8 w-8 text-green-500 shrink-0" />
                     ) : (
-                      <File className="h-8 w-8 text-green-500 flex-shrink-0" />
+                      <File className="h-8 w-8 text-green-500 shrink-0" />
                     )}
                     <div className="min-w-0 flex-1">
                       <p className="text-sm font-medium truncate" title={file.fileName}>
@@ -455,7 +455,7 @@ const S3Uploader: React.FC<S3UploaderProps> = ({
                     onClick={() => window.open(file.url, '_blank', 'noopener,noreferrer')}
                     variant="outline"
                     size="sm"
-                    className="flex-shrink-0"
+                    className="shrink-0"
                   >
                     View
                   </Button>
